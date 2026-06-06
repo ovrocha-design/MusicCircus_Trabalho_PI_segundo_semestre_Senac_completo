@@ -74,4 +74,10 @@ export class Produtos implements OnInit {
     this.mensagemCarrinho = `"${produto.nome}" adicionado ao carrinho!`;
     setTimeout(() => { this.mensagemCarrinho = ''; this.cdr.detectChanges(); }, 3000);
   }
+
+  // garante que caminhos de imagem da API funcionem com o base-href do GitHub Pages
+  getImageUrl(imagem: string): string {
+    if (!imagem || imagem.startsWith('http')) return imagem;
+    return imagem.startsWith('/') ? imagem.slice(1) : imagem;
+  }
 }
