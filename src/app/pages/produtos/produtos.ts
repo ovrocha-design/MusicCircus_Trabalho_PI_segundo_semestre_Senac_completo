@@ -75,10 +75,10 @@ export class Produtos implements OnInit {
     setTimeout(() => { this.mensagemCarrinho = ''; this.cdr.detectChanges(); }, 3000);
   }
 
-  // retorna URL absoluta para imagens — necessário no GitHub Pages com subpath
+  // retorna URL absoluta com encoding para nomes de arquivo com caracteres especiais (ã, ç, etc.)
   getImageUrl(imagem: string): string {
     if (!imagem || imagem.startsWith('http')) return imagem;
     const clean = imagem.startsWith('/') ? imagem.slice(1) : imagem;
-    return `https://ovrocha-design.github.io/MusicCircus_Trabalho_PI_segundo_semestre_Senac_completo/${clean}`;
+    return encodeURI(`https://ovrocha-design.github.io/MusicCircus_Trabalho_PI_segundo_semestre_Senac_completo/${clean}`);
   }
 }
