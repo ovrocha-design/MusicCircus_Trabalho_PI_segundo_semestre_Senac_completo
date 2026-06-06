@@ -75,10 +75,9 @@ export class Produtos implements OnInit {
     setTimeout(() => { this.mensagemCarrinho = ''; this.cdr.detectChanges(); }, 3000);
   }
 
-  // retorna URL absoluta com encode — necessário para nomes de arquivo com acentos no GitHub Pages
   getImageUrl(imagem: string): string {
     if (!imagem || imagem.startsWith('http')) return imagem;
     const clean = imagem.startsWith('/') ? imagem.slice(1) : imagem;
-    return encodeURI(`https://ovrocha-design.github.io/MusicCircus_Trabalho_PI_segundo_semestre_Senac_completo/${clean}`);
+    return `https://ovrocha-design.github.io/MusicCircus_Trabalho_PI_segundo_semestre_Senac_completo/${clean}`;
   }
 }

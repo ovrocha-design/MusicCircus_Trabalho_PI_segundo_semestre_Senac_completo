@@ -1,4 +1,4 @@
-﻿{
+{
   "usuarios": [
     {
       "id": "1",
@@ -18,12 +18,12 @@
   "produtos": [
     {
       "id": "1",
-      "nome": "ViolÃ£o ElÃ©trico Nylon Strinberg Flat SL200C MGS",
+      "nome": "Violão Elétrico Nylon Strinberg Flat SL200C MGS",
       "descricao": "Nylon, cor Matte Gold Sunburst",
       "preco": 585,
       "precoOriginal": 650,
       "categoria": "Cordas",
-      "imagem": "IMG/violÃ£o1.jpeg",
+      "imagem": "IMG/violao1.jpeg",
       "isNew": true,
       "discontinued": false
     },
@@ -41,7 +41,7 @@
     {
       "id": "3",
       "nome": "Guitarra Super Stratocaster Seizi Fun Budokan Vintage Daphne Blue",
-      "descricao": "Corpo alder, braÃ§o maple",
+      "descricao": "Corpo alder, braço maple",
       "preco": 1341.9,
       "precoOriginal": 1490.9,
       "categoria": "Cordas",
@@ -52,7 +52,7 @@
     {
       "id": "4",
       "nome": "Violino 4/4 Vivace Mozart MO44S Fosco",
-      "descricao": "Tampo spruce sÃ³lido, acabamento fosco",
+      "descricao": "Tampo spruce sólido, acabamento fosco",
       "preco": 585,
       "precoOriginal": 650,
       "categoria": "Cordas",
@@ -63,7 +63,7 @@
     {
       "id": "5",
       "nome": "Saxofone Tenor Eagle ST 503",
-      "descricao": "LatÃ£o laqueado dourado, estojo incluso",
+      "descricao": "Latão laqueado dourado, estojo incluso",
       "preco": 7609.95,
       "precoOriginal": 8455.5,
       "categoria": "Sopro",
@@ -73,22 +73,22 @@
     },
     {
       "id": "6",
-      "nome": "Pandeiro 11\" ContemporÃ¢nea FÃ³rmica Black Carlos CafÃ© 37PBCF",
-      "descricao": "Pele sintÃ©tica, platinelas de alumÃ­nio",
+      "nome": "Pandeiro 11\" Contemporânea Fórmica Black Carlos Café 37PBCF",
+      "descricao": "Pele sintética, platinelas de alumínio",
       "preco": 769.5,
       "precoOriginal": 855,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/pandeiro1.jpeg",
       "isNew": false,
       "discontinued": false
     },
     {
       "id": "7",
-      "nome": "Bateria EletrÃ´nica 7 Pads MXT MD200C",
-      "descricao": "7 pads com mÃ³dulo de som integrado",
+      "nome": "Bateria Eletrônica 7 Pads MXT MD200C",
+      "descricao": "7 pads com módulo de som integrado",
       "preco": 2097,
       "precoOriginal": 2330,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": true,
       "discontinued": false
@@ -99,14 +99,14 @@
       "descricao": "Par de asalatos para iniciantes",
       "preco": 117,
       "precoOriginal": 130,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/assalato1.jpeg",
       "isNew": false,
       "discontinued": false
     },
     {
       "id": "9",
-      "nome": "Gaita DiatÃ´nica Orleans Stone G Sol",
+      "nome": "Gaita Diatônica Orleans Stone G Sol",
       "descricao": "10 furos, tom Sol, caixa de metal",
       "preco": 135,
       "precoOriginal": 150,
@@ -117,7 +117,7 @@
     },
     {
       "id": "10",
-      "nome": "Baixo ElÃ©trico Fender Squier Affinity Series Jazz Bass",
+      "nome": "Baixo Elétrico Fender Squier Affinity Series Jazz Bass",
       "descricao": "Corpo alder, escala rosewood 20 trastes",
       "preco": 2199,
       "precoOriginal": 2450,
@@ -139,7 +139,7 @@
     },
     {
       "id": "12",
-      "nome": "Cavaquinho Rozini RX11ACF ElÃ©trico",
+      "nome": "Cavaquinho Rozini RX11ACF Elétrico",
       "descricao": "Tampo spruce, captador piezo embutido",
       "preco": 749,
       "precoOriginal": 830,
@@ -151,7 +151,7 @@
     {
       "id": "13",
       "nome": "Bandolim Strinberg BM30 Natural",
-      "descricao": "Corpo oval, tampo abeto sÃ³lido",
+      "descricao": "Corpo oval, tampo abeto sólido",
       "preco": 895,
       "precoOriginal": 990,
       "categoria": "Cordas",
@@ -184,7 +184,7 @@
     {
       "id": "16",
       "nome": "Trompete Bb Yamaha YTR-2330 Laqueado",
-      "descricao": "LatÃ£o laqueado, 3 pistÃµes monel",
+      "descricao": "Latão laqueado, 3 pistões monel",
       "preco": 3850,
       "precoOriginal": 4280,
       "categoria": "Sopro",
@@ -206,7 +206,7 @@
     {
       "id": "18",
       "nome": "Trombone de Vara Eagle TB200 Laqueado",
-      "descricao": "Campana 8 pol, vara dupla em latÃ£o",
+      "descricao": "Campana 8 pol, vara dupla em latão",
       "preco": 2250,
       "precoOriginal": 2500,
       "categoria": "Sopro",
@@ -216,8 +216,8 @@
     },
     {
       "id": "19",
-      "nome": "OboÃ© Yamaha YOB-241 Student",
-      "descricao": "Resina ABS, mecanismo semi-automÃ¡tico",
+      "nome": "Oboé Yamaha YOB-241 Student",
+      "descricao": "Resina ABS, mecanismo semi-automático",
       "preco": 5990,
       "precoOriginal": 6650,
       "categoria": "Sopro",
@@ -249,33 +249,33 @@
     },
     {
       "id": "22",
-      "nome": "Bateria AcÃºstica Pearl Export EXX725SPC",
-      "descricao": "5 peÃ§as, ferragens incluÃ­das, acabamento Jet Black",
+      "nome": "Bateria Acústica Pearl Export EXX725SPC",
+      "descricao": "5 peças, ferragens incluídas, acabamento Jet Black",
       "preco": 5499,
       "precoOriginal": 6100,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": true,
       "discontinued": false
     },
     {
       "id": "23",
-      "nome": "CajÃ³n Profissional ContemporÃ¢nea CAJPF1",
-      "descricao": "Madeira compensada, snare interno regulÃ¡vel",
+      "nome": "Cajón Profissional Contemporânea CAJPF1",
+      "descricao": "Madeira compensada, snare interno regulável",
       "preco": 649,
       "precoOriginal": 720,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": false,
       "discontinued": false
     },
     {
       "id": "24",
-      "nome": "DjembÃª Nagado 12\" Couro Natural",
-      "descricao": "Corpo iroko, corda de nylon tranÃ§ado",
+      "nome": "Djembê Nagado 12\" Couro Natural",
+      "descricao": "Corpo iroko, corda de nylon trançado",
       "preco": 530,
       "precoOriginal": 590,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": false,
       "discontinued": false
@@ -283,10 +283,10 @@
     {
       "id": "25",
       "nome": "Xilofone Infantil Lino 15 Teclas Coloridas",
-      "descricao": "Teclas alumÃ­nio, baquetas inclusas",
+      "descricao": "Teclas alumínio, baquetas inclusas",
       "preco": 189,
       "precoOriginal": 210,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": false,
       "discontinued": false
@@ -294,32 +294,32 @@
     {
       "id": "26",
       "nome": "Conga Nagado 11\" Fibra de Vidro",
-      "descricao": "Pele buffalo, aros em aÃ§o cromado",
+      "descricao": "Pele buffalo, aros em aço cromado",
       "preco": 1290,
       "precoOriginal": 1430,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": false,
       "discontinued": false
     },
     {
       "id": "27",
-      "nome": "BongÃ´ ContemporÃ¢nea BG12 Couro",
-      "descricao": "Pele couro natural, aro metÃ¡lico",
+      "nome": "Bongô Contemporânea BG12 Couro",
+      "descricao": "Pele couro natural, aro metálico",
       "preco": 310,
       "precoOriginal": 345,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": false,
       "discontinued": false
     },
     {
       "id": "28",
-      "nome": "TriÃ¢ngulo Eagle 20cm com Baqueta",
-      "descricao": "AÃ§o inox, suporte de nylon incluso",
+      "nome": "Triângulo Eagle 20cm com Baqueta",
+      "descricao": "Aço inox, suporte de nylon incluso",
       "preco": 89,
       "precoOriginal": 99,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": false,
       "discontinued": true
@@ -330,7 +330,7 @@
       "descricao": "Par de pratos hi-hat, liga B20 premium",
       "preco": 2890,
       "precoOriginal": 3210,
-      "categoria": "PercussÃ£o",
+      "categoria": "Percussão",
       "imagem": "IMG/bateria1.jpeg",
       "isNew": true,
       "discontinued": false
@@ -338,4 +338,3 @@
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
-
