@@ -1,4 +1,4 @@
-import {
+﻿import {
   Component,
   OnInit,
   OnDestroy,
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 
-// ─── Interfaces de dados ───────────────────────────────────────────────────────
+// â”€â”€â”€ Interfaces de dados â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export interface Produto {
   id: number;
@@ -33,7 +33,7 @@ export interface Categoria {
   imagem: string;
 }
 
-// ─── Componente ────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Componente â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 @Component({
   selector: 'app-home',
@@ -44,55 +44,55 @@ export interface Categoria {
 })
 export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  // ── Referências ao carrossel ──────────────────────────────────────────────
+  // â”€â”€ ReferÃªncias ao carrossel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   @ViewChild('carouselTrack') carouselTrack!: ElementRef<HTMLElement>;
 
-  // ── Estado do carrossel ───────────────────────────────────────────────────
+  // â”€â”€ Estado do carrossel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   private readonly visibleCards = 3;
   private carouselIndex = this.visibleCards;
   private originalLength = 0;
   private autoPlayInterval: ReturnType<typeof setInterval> | null = null;
 
-  // ── Formulário de contato ────────────────────────────────────────────────
+  // â”€â”€ FormulÃ¡rio de contato â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   contatoNome = '';
   contatoEmail = '';
   contatoTelefone = '';
   contatoMensagem = '';
 
-  // ── Dados: Categorias ────────────────────────────────────────────────────
+  // â”€â”€ Dados: Categorias â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   categorias: Categoria[] = [
-    { tipo: 'Instrumentos', nome: 'De Sopro',   imagem: '/IMG/sopro.png'      },
-    { tipo: 'Instrumentos', nome: 'De Cordas',  imagem: '/IMG/cordas.jpg'     },
-    { tipo: 'Instrumentos', nome: 'Percussão',  imagem: '/IMG/percussão.jpg'  },
+    { tipo: 'Instrumentos', nome: 'De Sopro',   imagem: 'IMG/sopro.png'      },
+    { tipo: 'Instrumentos', nome: 'De Cordas',  imagem: 'IMG/cordas.jpg'     },
+    { tipo: 'Instrumentos', nome: 'PercussÃ£o',  imagem: 'IMG/percussÃ£o.jpg'  },
   ];
 
-  // ── Dados: Produtos ───────────────────────────────────────────────────────
+  // â”€â”€ Dados: Produtos â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   produtos: Produto[] = [
-    { id: 1, nome: 'Violão Elétrico Nylon Strinberg Flat SL200C MGS',                     preco: 585.00,   precoOriginal: 650.00,   desconto: '-10%', imagem: '/IMG/violão1.jpeg'   },
-    { id: 2, nome: 'Flauta Doce Tenor Yamaha Barroca YRT 304B II',                         preco: 702.90,   precoOriginal: 780.90,   desconto: '-10%', imagem: '/IMG/flauta1.jpeg'   },
-    { id: 3, nome: 'Guitarra Super Stratocaster Seizi Fun Budokan Vintage Daphne Blue',    preco: 1341.90,  precoOriginal: 1490.90,  desconto: '-10%', imagem: '/IMG/guitarra1.jpeg' },
-    { id: 4, nome: 'Violino 4/4 Vivace Mozart MO44S Fosco',                                preco: 585.00,   precoOriginal: 650.00,   desconto: '-10%', imagem: '/IMG/violino1.jpeg'  },
-    { id: 5, nome: 'Saxofone Tenor Eagle ST 503',                                           preco: 7609.95,  precoOriginal: 8455.50,  desconto: '-10%', imagem: '/IMG/saxofone1.jpeg' },
-    { id: 6, nome: 'Pandeiro 11\" Contemporânea Fórmica Black Carlos Café 37PBCF',          preco: 769.50,   precoOriginal: 855.00,   desconto: '-10%', imagem: '/IMG/pandeiro1.jpeg' },
-    { id: 7, nome: 'Bateria eletrônica 7 Pads MXT MD200C',                                 preco: 2097.00,  precoOriginal: 2330.00,  desconto: '-10%', imagem: '/IMG/bateria1.jpeg'  },
-    { id: 8, nome: 'Asalato Tac Iniciante (1 Par)',                                         preco: 117.00,   precoOriginal: 130.00,   desconto: '-10%', imagem: '/IMG/assalato1.jpeg' },
-    { id: 9, nome: 'Gaita Diatônica Orleans Stone G Sol',                                   preco: 135.00,   precoOriginal: 150.00,   desconto: '-10%', imagem: '/IMG/gaita1.jpeg'    },
+    { id: 1, nome: 'ViolÃ£o ElÃ©trico Nylon Strinberg Flat SL200C MGS',                     preco: 585.00,   precoOriginal: 650.00,   desconto: '-10%', imagem: 'IMG/violÃ£o1.jpeg'   },
+    { id: 2, nome: 'Flauta Doce Tenor Yamaha Barroca YRT 304B II',                         preco: 702.90,   precoOriginal: 780.90,   desconto: '-10%', imagem: 'IMG/flauta1.jpeg'   },
+    { id: 3, nome: 'Guitarra Super Stratocaster Seizi Fun Budokan Vintage Daphne Blue',    preco: 1341.90,  precoOriginal: 1490.90,  desconto: '-10%', imagem: 'IMG/guitarra1.jpeg' },
+    { id: 4, nome: 'Violino 4/4 Vivace Mozart MO44S Fosco',                                preco: 585.00,   precoOriginal: 650.00,   desconto: '-10%', imagem: 'IMG/violino1.jpeg'  },
+    { id: 5, nome: 'Saxofone Tenor Eagle ST 503',                                           preco: 7609.95,  precoOriginal: 8455.50,  desconto: '-10%', imagem: 'IMG/saxofone1.jpeg' },
+    { id: 6, nome: 'Pandeiro 11\" ContemporÃ¢nea FÃ³rmica Black Carlos CafÃ© 37PBCF',          preco: 769.50,   precoOriginal: 855.00,   desconto: '-10%', imagem: 'IMG/pandeiro1.jpeg' },
+    { id: 7, nome: 'Bateria eletrÃ´nica 7 Pads MXT MD200C',                                 preco: 2097.00,  precoOriginal: 2330.00,  desconto: '-10%', imagem: 'IMG/bateria1.jpeg'  },
+    { id: 8, nome: 'Asalato Tac Iniciante (1 Par)',                                         preco: 117.00,   precoOriginal: 130.00,   desconto: '-10%', imagem: 'IMG/assalato1.jpeg' },
+    { id: 9, nome: 'Gaita DiatÃ´nica Orleans Stone G Sol',                                   preco: 135.00,   precoOriginal: 150.00,   desconto: '-10%', imagem: 'IMG/gaita1.jpeg'    },
   ];
 
-  // ── Dados: Cursos ─────────────────────────────────────────────────────────
+  // â”€â”€ Dados: Cursos â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   cursos: Curso[] = [
-    { titulo: 'Aulas de Bateria',  imagem: '/IMG/bateria.jpg',      link: 'https://www.schoolofrock.com.br/' },
-    { titulo: 'Aulas de Guitarra', imagem: '/IMG/guitar.jpg',       link: 'https://addmusica.com/'           },
-    { titulo: 'Aulas de Piano',    imagem: '/IMG/piano.jpg',        link: 'https://pianobello.com/'          },
-    { titulo: 'Aulas de Violino',  imagem: '/IMG/violino.jpg',      link: 'https://companhiadascordas.com.br/violino/' },
-    { titulo: 'Aulas de Saxofone', imagem: '/IMG/Blog-1024x683.jpg',link: 'https://studiolatitude.com.br/'  },
-    { titulo: 'Aulas de Flauta',   imagem: '/IMG/flauta.jpg',       link: 'https://companhiadascordas.com.br/violino/' },
+    { titulo: 'Aulas de Bateria',  imagem: 'IMG/bateria.jpg',      link: 'https://www.schoolofrock.com.br/' },
+    { titulo: 'Aulas de Guitarra', imagem: 'IMG/guitar.jpg',       link: 'https://addmusica.com/'           },
+    { titulo: 'Aulas de Piano',    imagem: 'IMG/piano.jpg',        link: 'https://pianobello.com/'          },
+    { titulo: 'Aulas de Violino',  imagem: 'IMG/violino.jpg',      link: 'https://companhiadascordas.com.br/violino/' },
+    { titulo: 'Aulas de Saxofone', imagem: 'IMG/Blog-1024x683.jpg',link: 'https://studiolatitude.com.br/'  },
+    { titulo: 'Aulas de Flauta',   imagem: 'IMG/flauta.jpg',       link: 'https://companhiadascordas.com.br/violino/' },
   ];
 
-  // ── Dados para renderização do carrossel (inclui clones) ──────────────────
+  // â”€â”€ Dados para renderizaÃ§Ã£o do carrossel (inclui clones) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   cursosCarrossel: Curso[] = [];
 
-  // ── Lifecycle ─────────────────────────────────────────────────────────────
+  // â”€â”€ Lifecycle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   ngOnInit(): void {
     this.buildCarouselData();
@@ -109,9 +109,9 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.stopAutoPlay();
   }
 
-  // ── Navegação por ancora ──────────────────────────────────────────────────
+  // â”€â”€ NavegaÃ§Ã£o por ancora â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-  /** Scrola suavemente até o elemento com o id fornecido */
+  /** Scrola suavemente atÃ© o elemento com o id fornecido */
   scrollTo(id: string): void {
     const el = document.getElementById(id);
     if (el) {
@@ -119,7 +119,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  // ── Carrossel ─────────────────────────────────────────────────────────────
+  // â”€â”€ Carrossel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   private buildCarouselData(): void {
     this.originalLength = this.cursos.length;
@@ -178,18 +178,18 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  // ── Carrinho ──────────────────────────────────────────────────────────────
+  // â”€â”€ Carrinho â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   addToCart(produto: Produto): void {
     console.log('Adicionado ao carrinho:', produto.nome);
     alert(`"${produto.nome}" adicionado ao carrinho!`);
   }
 
-  // ── Formulário de contato ─────────────────────────────────────────────────
+  // â”€â”€ FormulÃ¡rio de contato â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   onContatoSubmit(): void {
     if (!this.contatoNome || !this.contatoEmail || !this.contatoMensagem) {
-      alert('Por favor, preencha os campos obrigatórios.');
+      alert('Por favor, preencha os campos obrigatÃ³rios.');
       return;
     }
     console.log('Mensagem enviada:', {
@@ -202,9 +202,10 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.contatoNome = this.contatoEmail = this.contatoTelefone = this.contatoMensagem = '';
   }
 
-  // ── Utilitários ───────────────────────────────────────────────────────────
+  // â”€â”€ UtilitÃ¡rios â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   formatarPreco(valor: number): string {
     return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
 }
+

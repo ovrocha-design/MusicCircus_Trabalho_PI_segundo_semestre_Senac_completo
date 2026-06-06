@@ -1,28 +1,28 @@
-<!-- ═══════════════════════════════════════════════════════
-     home.html  —  Music Circus (Angular) — Layout Renovado
-     ═══════════════════════════════════════════════════════ -->
+﻿<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     home.html  â€”  Music Circus (Angular) â€” Layout Renovado
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 
 
-<!-- ── BANNER ─────────────────────────────────────────────── -->
+<!-- â”€â”€ BANNER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="banner" id="home">
   <div class="banner__overlay"></div>
   <div class="banner__content">
     <span class="banner__eyebrow">Instrumentos de Cordas</span>
     <h1 class="banner__title">
-      O violão mais<br>
+      O violÃ£o mais<br>
       <em>famoso</em> voltou<br>
       pra loja!
     </h1>
     <p class="banner__sub">
       Porque cada instrumento tem seu som, um papel e uma personalidade
-      completamente única! Com qual instrumento gostaria de mostrar sua canção?
+      completamente Ãºnica! Com qual instrumento gostaria de mostrar sua canÃ§Ã£o?
     </p>
     <a class="btn banner__btn" (click)="scrollTo('productos')">Confira!</a>
   </div>
 </section>
 
 
-<!-- ── CATEGORIAS ─────────────────────────────────────────── -->
+<!-- â”€â”€ CATEGORIAS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="categoria" id="categoria">
   <h2 class="section-heading">Nossas <span>Categorias</span></h2>
   <div class="categoria__grid">
@@ -40,7 +40,7 @@
 </section>
 
 
-<!-- ── INFORMAÇÕES / ÍCONES ───────────────────────────────── -->
+<!-- â”€â”€ INFORMAÃ‡Ã•ES / ÃCONES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="beneficios">
   <div class="beneficios__item">
     <i class="fas fa-shipping-fast"></i>
@@ -53,7 +53,7 @@
     <i class="fas fa-money-check"></i>
     <div>
       <h3>Parcelamento</h3>
-      <span>em até 10x no cartão de crédito</span>
+      <span>em atÃ© 10x no cartÃ£o de crÃ©dito</span>
     </div>
   </div>
   <div class="beneficios__item">
@@ -66,14 +66,14 @@
   <div class="beneficios__item">
     <i class="fas fa-certificate"></i>
     <div>
-      <h3>Precedência</h3>
+      <h3>PrecedÃªncia</h3>
       <span>Revenda autorizada</span>
     </div>
   </div>
 </section>
 
 
-<!-- ── PRODUTOS ───────────────────────────────────────────── -->
+<!-- â”€â”€ PRODUTOS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="productos" id="productos">
   <h1 class="heading">Produtos <span>Favoritos</span></h1>
 
@@ -97,7 +97,7 @@
 
       <div class="content">
         <h3>{{ produto.nome }}</h3>
-        <div class="preço">
+        <div class="preÃ§o">
           {{ formatarPreco(produto.preco) }}
           <span>{{ formatarPreco(produto.precoOriginal) }}</span>
         </div>
@@ -107,12 +107,12 @@
 </section>
 
 
-<!-- ── CARROSSEL DE CURSOS ────────────────────────────────── -->
+<!-- â”€â”€ CARROSSEL DE CURSOS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="caroussel" id="cursos">
   <h1 class="heading">Cursos para <span>Aprender</span></h1>
 
   <div class="carousel-wrapper">
-    <button class="carousel-btn prev" (click)="carouselPrev()">⬅</button>
+    <button class="carousel-btn prev" (click)="carouselPrev()">â¬…</button>
 
     <div class="carousel">
       <div class="carousel-track" #carouselTrack>
@@ -129,33 +129,33 @@
       </div>
     </div>
 
-    <button class="carousel-btn next" (click)="carouselNext()">➡</button>
+    <button class="carousel-btn next" (click)="carouselNext()">âž¡</button>
   </div>
 </section>
 
 
-<!-- ── SOBRE NÓS ──────────────────────────────────────────── -->
+<!-- â”€â”€ SOBRE NÃ“S â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="sobre-nos" id="sobre-nos">
   <div class="sobre-nos__deco" aria-hidden="true"></div>
   <div class="sobre-nos__content">
     <span class="sobre-nos__label">Quem somos</span>
-    <h2 class="sobre-nos__title">A paixão pela música<br>em cada detalhe</h2>
+    <h2 class="sobre-nos__title">A paixÃ£o pela mÃºsica<br>em cada detalhe</h2>
     <p class="sobre-nos__text">
-      A Music Circus nasceu da paixão de músicos que cansaram de garimpar
-      instrumento bom em lugar ruim. Aqui você encontra curadoria especializada,
+      A Music Circus nasceu da paixÃ£o de mÃºsicos que cansaram de garimpar
+      instrumento bom em lugar ruim. Aqui vocÃª encontra curadoria especializada,
       atendimento humano e os melhores instrumentos para o seu talento.
     </p>
-    <a routerLink="/about" class="btn btn--outline">Conheça nossa história</a>
+    <a routerLink="/about" class="btn btn--outline">ConheÃ§a nossa histÃ³ria</a>
   </div>
   <div class="sobre-nos__visual" aria-hidden="true">
-    <div class="sobre-nos__note">♪</div>
-    <div class="sobre-nos__note sobre-nos__note--2">♫</div>
-    <div class="sobre-nos__note sobre-nos__note--3">♩</div>
+    <div class="sobre-nos__note">â™ª</div>
+    <div class="sobre-nos__note sobre-nos__note--2">â™«</div>
+    <div class="sobre-nos__note sobre-nos__note--3">â™©</div>
   </div>
 </section>
 
 
-<!-- ── CONTATO ────────────────────────────────────────────── -->
+<!-- â”€â”€ CONTATO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="contato" id="contato">
   <h1 class="heading">Fale <span>Conosco</span></h1>
 
@@ -222,7 +222,8 @@
     </form>
 
     <div class="image">
-      <img src="/IMG/contato.jpg" alt="Contato Music Circus" />
+      <img src="IMG/contato.jpg" alt="Contato Music Circus" />
     </div>
   </div>
 </section>
+
