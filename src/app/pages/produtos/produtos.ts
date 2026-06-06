@@ -75,9 +75,10 @@ export class Produtos implements OnInit {
     setTimeout(() => { this.mensagemCarrinho = ''; this.cdr.detectChanges(); }, 3000);
   }
 
-  // garante que caminhos de imagem da API funcionem com o base-href do GitHub Pages
+  // retorna URL absoluta para imagens — necessário no GitHub Pages com subpath
   getImageUrl(imagem: string): string {
     if (!imagem || imagem.startsWith('http')) return imagem;
-    return imagem.startsWith('/') ? imagem.slice(1) : imagem;
+    const clean = imagem.startsWith('/') ? imagem.slice(1) : imagem;
+    return `https://ovrocha-design.github.io/MusicCircus_Trabalho_PI_segundo_semestre_Senac_completo/${clean}`;
   }
 }
