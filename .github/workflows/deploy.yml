@@ -26,7 +26,7 @@ jobs:
         run: npm ci
 
       - name: Build produção
-        run: npx ng build --configuration=production --base-href="/MusicCircus/"
+        run: npx ng build --configuration=production --base-href="/MusicCircus_Trabalho_PI_segundo_semestre_Senac_completo/"
 
       - name: Deploy no GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
